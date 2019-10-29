@@ -1,0 +1,5 @@
+<ul class="list-group mt-2">
+    <app-item *ngFor="let item of arrItemFromInput" [itemFromList]="item" (removeClick)="removeItem($event);"
+         (changeStatusClick)="changeStatusItem($event)">
+    </app-item>
+</ul>

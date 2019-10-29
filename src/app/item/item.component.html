@@ -1,0 +1,6 @@
+<li class="list-group-item mb-2" (click)="changeStatus(itemFromList.id);" [class.success]="itemFromList.status">
+    {{ itemFromList.input }} {{ itemFromList.status ? '(completed)' : '' }}
+    <button class="btn btn-danger" style="float: right;" (click)="removeByList(itemFromList.id);">
+        <i class="fa fa-trash" aria-hidden="true"></i>
+    </button>
+</li>
